@@ -140,10 +140,7 @@ export default defineComponent({
             <br />
             <br />
             <b>Team Members: </b>
-            <template
-              v-for="(member, index) in team"
-              v-bind:key="member.name"
-            >
+            <template v-for="(member, index) in team" v-bind:key="member.name">
               <a :href="member.url">{{ member.name }}</a>
               <span v-if="index !== team.length - 1">, </span>
             </template>
@@ -153,34 +150,32 @@ export default defineComponent({
     </div>
 
     <!-- Projects -->
-    <div class="">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
-          >
-            Projects
-          </p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:text-center">
+        <p
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Projects
+        </p>
 
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
+        >
           <div
-            class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
+            v-for="project in projects"
+            v-bind:key="project.name"
+            class="bg-white shadow-lg rounded-lg p-3 hover:cursor-pointer hover:scale-105 transition-all"
           >
-            <div
-              v-for="project in projects"
-              v-bind:key="project.name"
-              class="bg-white shadow-lg rounded-lg p-3 hover:cursor-pointer hover:scale-105 transition-all"
+            {{ project.name }}
+            <br />
+            <span
+              v-for="tag in project.tags"
+              v-bind:key="project.name + tag"
+              class="px-2 py-1 text-white text-xs font-medium rounded-full mx-1"
+              :class="tags[tag].color"
             >
-              {{ project.name }}
-              <br />
-              <span
-                v-for="tag in project.tags"
-                v-bind:key="project.name + tag"
-                class="px-2 py-1 text-white text-xs font-medium rounded-full mx-1"
-                :class="tags[tag].color"
-              >
-                {{ tags[tag].text }}
-              </span>
-            </div>
+              {{ tags[tag].text }}
+            </span>
           </div>
         </div>
       </div>
