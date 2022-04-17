@@ -3,6 +3,10 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   setup(): {
+    team: {
+      name: string;
+      url?: string;
+    }[];
     projects: {
       name: string;
       path: string;
@@ -11,6 +15,36 @@ export default defineComponent({
     tags: { [key: string]: { color: string; text: string } };
   } {
     return {
+      team: [
+        {
+          name: "Citymonstret",
+          url: "https://github.com/Citymonstret",
+        },
+        {
+          name: "dordsor21",
+          url: "https://github.com/dordsor21",
+        },
+        {
+          name: "IronApollo",
+          url: "https://github.com/IronApollo",
+        },
+        {
+          name: "Empire92",
+          url: "https://github.com/boy0001",
+        },
+        {
+          name: "MattBDev",
+          url: "https://github.com/MattBDev",
+        },
+        {
+          name: "NotMyFault",
+          url: "https://github.com/NotMyFault",
+        },
+        {
+          name: "RedstoneFuture",
+          url: "https://github.com/RedstoneFuture",
+        },
+      ],
       projects: [
         {
           name: "FastAsyncWorldEdit",
@@ -28,11 +62,6 @@ export default defineComponent({
           tags: ["spigot"],
         },
         {
-          name: "RedEdit",
-          path: "/rededit",
-          tags: ["spigot"],
-        },
-        {
           name: "HoloPlots",
           path: "/holoplots",
           tags: ["psAddon"],
@@ -43,16 +72,6 @@ export default defineComponent({
           tags: ["psAddon"],
         },
         {
-          name: "PAPI Expansion",
-          path: "/papi-expansion",
-          tags: ["psAddon"],
-        },
-        {
-          name: "PlotWebPHP",
-          path: "/plotwebphp",
-          tags: ["psAddon", "web"],
-        },
-        {
           name: "Schematic Web Interface",
           path: "/schematic-web-interface",
           tags: ["web"],
@@ -61,16 +80,6 @@ export default defineComponent({
           name: "Paste Viewer",
           path: "/paste-viewer",
           tags: ["web"],
-        },
-        {
-          name: "Kvantum",
-          path: "/kvantum",
-          tags: ["web", "framework"],
-        },
-        {
-          name: "Heightmap Interface",
-          path: "/heightmap",
-          tags: ["standalone"],
         },
       ],
       tags: {
@@ -130,8 +139,14 @@ export default defineComponent({
             databases for our projects.
             <br />
             <br />
-            <b>Team Members:</b> Citymonstret, dordosor21, IronApollo, Jesse,
-            MattBDev, NotMyFault and RedstoneFuture
+            <b>Team Members: </b>
+            <template
+              v-for="(member, index) in team"
+              v-bind:key="member.name"
+            >
+              <a :href="member.url">{{ member.name }}</a>
+              <span v-if="index !== team.length - 1">, </span>
+            </template>
           </p>
         </div>
       </div>
