@@ -69,7 +69,7 @@ export default defineComponent({
 <template>
   <main class="container mx-auto px-6">
     <!-- Information -->
-    <div class="py-12">
+    <div class="py-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <p
