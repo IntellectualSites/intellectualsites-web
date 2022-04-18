@@ -1,5 +1,3 @@
-import type { marked, Renderer } from "marked";
-
 const HEADINGS = {
   1: "text-2xl",
   2: "text-xl",
@@ -9,13 +7,11 @@ const HEADINGS = {
   6: "text",
 };
 
-export const RENDERER: Renderer<string> = {
-  heading(
-    text: string,
-    level: 1 | 2 | 3 | 4 | 5 | 6,
-    raw: string,
-    slugger: marked.Slugger
-  ): string {
+export const RENDERER: {
+  heading(text: string, level: 1 | 2 | 3 | 4 | 5 | 6): string;
+  list(body: string, ordered: boolean, start: number): string;
+} = {
+  heading(text: string, level: 1 | 2 | 3 | 4 | 5 | 6): string {
     return `<h2 class="${HEADINGS[level]} my-3">${text}</h2>`;
   },
   list(body: string, ordered: boolean, start: number): string {

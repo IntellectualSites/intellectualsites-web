@@ -1,4 +1,8 @@
-<script lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({});
+</script>
 
 <template>
   <main class="container mx-auto px-6">

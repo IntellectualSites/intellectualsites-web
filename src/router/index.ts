@@ -26,7 +26,7 @@ const router = createRouter({
       path: "/fawe",
       name: "fawe",
       component: FastAsyncWorldEditView,
-    }
+    },
   ],
 });
 

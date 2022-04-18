@@ -8,15 +8,20 @@ export default defineComponent({
     name: String,
     logo: String,
     repository: String,
-    versions: Array,
+    versions: Array as () => Array<string>,
     showReleases: Boolean,
   },
   data() {
     return {
-      selected: "",
-      hovered: undefined,
+      selected: undefined as string | undefined,
+      hovered: undefined as string | undefined,
       collapsed: true,
-      releases: "",
+      releases: [] as {
+        id: number;
+        published_at: string;
+        name: string;
+        body: string;
+      }[],
     };
   },
   mounted() {
@@ -163,7 +168,8 @@ export default defineComponent({
           type="button"
           class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
         >
-          Download {{ name }} <br> {{ selected }}
+          Download {{ name }} <br />
+          {{ selected }}
           <svg
             class="w-5 h-5 ml-4 -mr-1"
             fill="none"
