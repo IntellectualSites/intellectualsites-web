@@ -9,11 +9,13 @@
     "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "marked": "^4.0.14",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
+    "@types/marked": "^4.0.3",
     "@types/node": "^16.11.26",
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/eslint-config-prettier": "^7.0.0",

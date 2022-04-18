@@ -121,7 +121,7 @@ export default defineComponent({
             IntellectualSites
           </h2>
           <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
             Information
           </p>
@@ -153,7 +153,7 @@ export default defineComponent({
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
-          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+          class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Projects
         </p>
