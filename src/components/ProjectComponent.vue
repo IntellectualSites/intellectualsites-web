@@ -108,7 +108,7 @@ export default defineComponent({
                         aria-haspopup="listbox"
                         aria-expanded="true"
                         aria-labelledby="listbox-label"
-                        @click.prevent="collapse(!this.collapsed)"
+                        @click.prevent="collapse(!collapsed)"
                       >
                         <span class="flex items-center">
                           <img
