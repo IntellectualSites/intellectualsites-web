@@ -5,5 +5,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:PierreSchwang/intellectualsites-web.git master:gh-pages
+git push -f $(git config --get remote.origin.url) master:gh-pages
 cd -

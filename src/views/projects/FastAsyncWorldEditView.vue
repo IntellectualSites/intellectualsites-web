@@ -20,6 +20,16 @@ export default defineComponent({
         "Sponge 1.12",
         "Sponge 1.11",
       ],
+      optionalDependencies: [
+        {
+          title: "Self-hosted Webinterface",
+          url: "/",
+        },
+        {
+          title: "FastAsyncVoxelSniper",
+          url: "/",
+        },
+      ],
     };
   },
 });
@@ -32,6 +42,7 @@ export default defineComponent({
     logo="https://raw.githubusercontent.com/IntellectualSites/FastAsyncWorldEdit/main/fawe-logo.png"
     name="FastAsyncWorldEdit"
     :show-releases="true"
+    :optional-dependencies="optionalDependencies"
   >
   </ProjectComponent>
 </template>

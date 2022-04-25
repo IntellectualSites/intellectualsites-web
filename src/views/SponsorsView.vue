@@ -81,7 +81,10 @@ export default defineComponent({
             Below you can find organizations and networks sponsoring our
             projects.
             <br />
-            Interested? <RouterLink to="/contact" class="text-is-red">Contact us.</RouterLink>
+            Interested?
+            <RouterLink to="/contact" class="text-is-red"
+              >Contact us.</RouterLink
+            >
           </p>
         </div>
       </div>

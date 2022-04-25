@@ -26,7 +26,7 @@ export default defineComponent({});
             <div class="relative justify-self-center">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <svg
                     class="w-6 h-6"
@@ -57,7 +57,7 @@ export default defineComponent({});
             <div class="relative justify-self-center">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <img src="../assets/icons/github-white.svg" class="h-6" />
                 </div>
@@ -73,7 +73,7 @@ export default defineComponent({});
             <div class="relative justify-self-center">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <img src="../assets/icons/discord.svg" class="h-6" />
                 </div>
