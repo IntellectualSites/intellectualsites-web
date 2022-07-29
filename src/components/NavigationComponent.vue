@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+
 export default defineComponent({
   setup() {
     return {
@@ -27,6 +28,10 @@ export default defineComponent({
         {
           name: "Discord",
           path: "https://discord.gg/intellectualsites",
+        },
+        {
+          name: "Team",
+          path: "/team",
         },
       ],
     };
@@ -132,7 +137,7 @@ export default defineComponent({
           <a href="https://github.com/IntellectualSites">
             <img
               class="block h-6"
-              src="../assets/icons/github.svg"
+              src="../assets/icons/github-white.svg"
               alt="GitHub"
             />
           </a>

@@ -3,10 +3,6 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   setup(): {
-    team: {
-      name: string;
-      url?: string;
-    }[];
     projects: {
       name: string;
       path: string;
@@ -15,40 +11,10 @@ export default defineComponent({
     tags: { [key: string]: { color: string; text: string } };
   } {
     return {
-      team: [
-        {
-          name: "Citymonstret",
-          url: "https://github.com/Citymonstret",
-        },
-        {
-          name: "dordsor21",
-          url: "https://github.com/dordsor21",
-        },
-        {
-          name: "IronApollo",
-          url: "https://github.com/IronApollo",
-        },
-        {
-          name: "Empire92",
-          url: "https://github.com/boy0001",
-        },
-        {
-          name: "MattBDev",
-          url: "https://github.com/MattBDev",
-        },
-        {
-          name: "NotMyFault",
-          url: "https://github.com/NotMyFault",
-        },
-        {
-          name: "RedstoneFuture",
-          url: "https://github.com/RedstoneFuture",
-        },
-      ],
       projects: [
         {
           name: "FastAsyncWorldEdit",
-          path: "/fawe",
+          path: "/fastasyncworldedit",
           tags: ["spigot"],
         },
         {
@@ -137,13 +103,6 @@ export default defineComponent({
             <br />
             For example custom web frameworks, paste services and asset
             databases for our projects.
-            <br />
-            <br />
-            <b>Team Members: </b>
-            <template v-for="(member, index) in team" v-bind:key="member.name">
-              <a :href="member.url">{{ member.name }}</a>
-              <span v-if="index !== team.length - 1">, </span>
-            </template>
           </p>
         </div>
       </div>
@@ -161,9 +120,10 @@ export default defineComponent({
         <div
           class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
         >
-          <div
+          <RouterLink
             v-for="project in projects"
             v-bind:key="project.name"
+            :to="'/project' + project.path"
             class="bg-white shadow-lg rounded-lg p-3 hover:cursor-pointer hover:scale-105 transition-all"
           >
             {{ project.name }}
@@ -176,7 +136,7 @@ export default defineComponent({
             >
               {{ tags[tag].text }}
             </span>
-          </div>
+          </RouterLink>
         </div>
       </div>
     </div>
