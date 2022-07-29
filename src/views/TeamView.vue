@@ -31,17 +31,23 @@
 import { defineComponent } from "vue";
 import LoadingComponent from "@/components/LoadingComponent.vue";
 
+declare type Member = {
+  id: number;
+  login: string;
+  html_url: string;
+  avatar_url: string;
+};
 export default defineComponent({
   components: { LoadingComponent },
   data() {
     return {
-      members: undefined,
+      members: undefined as Member[] | undefined,
     };
   },
   mounted() {
     fetch(`https://api.github.com/orgs/intellectualsites/members`)
       .then((value) => value.json())
-      .then((data) => data.filter((member) => member.id !== 95638266)) // remove intellectualsites-bot
+      .then((data) => data.filter((member: Member) => member.id !== 95638266)) // remove intellectualsites-bot
       .then((members) => (this.members = members));
   },
 });

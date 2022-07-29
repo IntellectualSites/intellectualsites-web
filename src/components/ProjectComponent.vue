@@ -158,7 +158,7 @@ export default defineComponent({
                         >
                           <li
                             v-for="version in versions"
-                            v-bind:key="version"
+                            v-bind:key="version.title"
                             class="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9"
                             id="listbox-option-0"
                             role="option"
