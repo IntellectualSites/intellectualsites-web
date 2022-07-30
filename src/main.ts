@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import createI18n from "./i18n/i18n";
 import "./assets/base.css";
 
 const app = createApp(App);
@@ -26,5 +27,6 @@ app.directive("click-outside", {
   },
 });
 app.use(router);
+app.use(createI18n);
 
 app.mount("#app");

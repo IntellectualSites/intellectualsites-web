@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 import { marked } from "marked";
 import { RENDERER } from "@/config/marked";
+import { useI18n } from "vue-i18n";
 
 declare type Version = {
   icon: string;
@@ -14,6 +15,7 @@ export default defineComponent({
     name: String,
     logo: String,
     repository: String,
+    showLegacyNotice: Boolean,
     versions: Array as () => Version[],
     showReleases: Boolean,
     optionalDependencies: Array as () => {
@@ -59,6 +61,13 @@ export default defineComponent({
       this.collapse(true);
     },
   },
+  setup() {
+    const { locale, t } = useI18n({
+      inheritLocale: true,
+    });
+
+    return { locale, t };
+  },
 });
 </script>
 
@@ -88,7 +97,10 @@ export default defineComponent({
             <div class="mt-5 md:mt-0 md:col-span-2">
               <div class="shadow sm:rounded-md">
                 <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-                  <div class="bg-red-500 text-white rounded-lg p-3 text-sm">
+                  <div
+                    class="bg-red-500 text-white rounded-lg p-3 text-sm"
+                    v-if="showLegacyNotice"
+                  >
                     Please ensure the correct platform & version is selected
                     above.
                     <br />
@@ -313,7 +325,9 @@ export default defineComponent({
             </div>
             <div class="mt-5 md:mt-0 md:col-span-2">
               <div class="shadow sm:rounded-md">
-                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">test</div>
+                <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+                  {{ $t("test") }}
+                </div>
               </div>
             </div>
           </div>

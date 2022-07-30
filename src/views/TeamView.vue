@@ -4,7 +4,7 @@
       <p
         class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        Team Members
+        {{ $t("team.title") }}
       </p>
     </div>
     <div

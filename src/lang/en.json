@@ -1,0 +1,16 @@
+{
+  "team": {
+    "title": "Team Members"
+  },
+  "projects": {
+    "FastAsyncWorldEdit": {
+      "slogan": "FastAsyncWorldEdit is poggers for doing stuff with blocks and stuff like that"
+    },
+    "FastAsyncVoxelSniper": {
+      "slogan": "FastAsyncVoxelSniper is poggers for doing stuff with blocks and stuff like that"
+    },
+    "PlotSquared": {
+      "slogan": "PlotSquared is poggers for doing stuff with plots and stuff like that"
+    }
+  }
+}
