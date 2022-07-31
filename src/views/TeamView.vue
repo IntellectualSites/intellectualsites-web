@@ -17,7 +17,7 @@
         class="bg-white shadow-lg rounded-lg p-3 hover:cursor-pointer hover:scale-105 transition-all text-center"
         :href="member.html_url"
       >
-        <img :src="member.avatar_url" class="w-32 rounded-full p-5" />
+        <img :src="member.avatar_url" class="w-32 rounded-full p-5 m-auto" />
         <span class="text-center">{{ member.login }}</span>
       </a>
     </div>

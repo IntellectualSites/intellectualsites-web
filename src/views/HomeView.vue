@@ -75,15 +75,15 @@ export default defineComponent({
         </p>
 
         <div
-          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
+          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5 items-start"
         >
           <div
             class="flex flex-1 gap-5"
             v-for="project in projects"
             v-bind:key="project.name"
           >
-            <img :src="project.icon" class="w-24" />
-            <span class="self-center">
+            <img :src="project.icon" class="w-24 h-24" />
+            <span>
               <b>{{ project.name }}</b>
               <p class="">{{ $t(`projects.${project.name}.slogan`) }}</p>
             </span>
