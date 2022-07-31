@@ -1,15 +1,15 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="lg:text-center">
+    <div class="text-center">
       <p
         class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        Team Members
+        {{ $t("team.title") }}
       </p>
     </div>
     <div
       v-if="members !== undefined"
-      class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
+      class="grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-3 gap-5 my-6 max-w-7xl text-l text-gray-700 lg:mx-auto"
     >
       <a
         v-for="member in members"

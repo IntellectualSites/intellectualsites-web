@@ -4,72 +4,29 @@ import { defineComponent } from "vue";
 export default defineComponent({
   setup(): {
     projects: {
+      icon: string;
       name: string;
       path: string;
-      tags: string[];
     }[];
-    tags: { [key: string]: { color: string; text: string } };
   } {
     return {
       projects: [
         {
+          icon: "https://raw.githubusercontent.com/IntellectualSites/Assets/main/plugins/FastAsyncWorldEdit/FastAsyncWorldEdit.svg",
           name: "FastAsyncWorldEdit",
           path: "/fastasyncworldedit",
-          tags: ["spigot"],
         },
         {
+          icon: "../assets/icons/plugins/gunpowder.png", // TODO: Compiler can't detect image path, as it's not directly referenced...
           name: "FastAsyncVoxelSniper",
           path: "/favs",
-          tags: ["spigot"],
         },
         {
+          icon: "https://raw.githubusercontent.com/IntellectualSites/Assets/main/plugins/PlotSquared/PlotSquared.svg",
           name: "PlotSquared",
           path: "/plotsquared",
-          tags: ["spigot"],
-        },
-        {
-          name: "HoloPlots",
-          path: "/holoplots",
-          tags: ["psAddon"],
-        },
-        {
-          name: "Plot2Dynmap",
-          path: "/plot2dynmap",
-          tags: ["psAddon"],
-        },
-        {
-          name: "Schematic Web Interface",
-          path: "/schematic-web-interface",
-          tags: ["web"],
-        },
-        {
-          name: "Paste Viewer",
-          path: "/paste-viewer",
-          tags: ["web"],
         },
       ],
-      tags: {
-        spigot: {
-          color: "bg-orange-600",
-          text: "Spigot",
-        },
-        web: {
-          color: "bg-green-600",
-          text: "Web",
-        },
-        psAddon: {
-          color: "bg-blue-600",
-          text: "P2 Addon",
-        },
-        standalone: {
-          color: "bg-rose-600",
-          text: "Standalone",
-        },
-        framework: {
-          color: "bg-red-600",
-          text: "Framework",
-        },
-      },
     };
   },
 });
@@ -108,35 +65,29 @@ export default defineComponent({
       </div>
     </div>
 
-    <!-- Projects -->
+    <!-- New Project -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="lg:text-center">
+      <div class="">
         <p
-          class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="mt-2 text-xl leading-8 font-bold tracking-tight text-gray-900 sm:text-2xl text-center"
         >
-          Projects
+          Our Projects
         </p>
 
         <div
-          class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
+          class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5"
         >
-          <RouterLink
+          <div
+            class="flex flex-1 gap-5"
             v-for="project in projects"
             v-bind:key="project.name"
-            :to="'/project' + project.path"
-            class="bg-white shadow-lg rounded-lg p-3 hover:cursor-pointer hover:scale-105 transition-all"
           >
-            {{ project.name }}
-            <br />
-            <span
-              v-for="tag in project.tags"
-              v-bind:key="project.name + tag"
-              class="px-2 py-1 text-white text-xs font-medium rounded-full mx-1"
-              :class="tags[tag].color"
-            >
-              {{ tags[tag].text }}
+            <img :src="project.icon" class="w-24" />
+            <span class="self-center">
+              <b>{{ project.name }}</b>
+              <p class="">{{ $t(`projects.${project.name}.slogan`) }}</p>
             </span>
-          </RouterLink>
+          </div>
         </div>
       </div>
     </div>

@@ -25,7 +25,8 @@ export default defineComponent({});
           >
             <div class="relative justify-self-center">
               <dt>
-                <div
+                <a
+                  href="mailto:contact@intellectualsites.com"
                   class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <svg
@@ -42,7 +43,7 @@ export default defineComponent({});
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     ></path>
                   </svg>
-                </div>
+                </a>
                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
                   Mail
                 </p>
@@ -56,11 +57,12 @@ export default defineComponent({});
 
             <div class="relative justify-self-center">
               <dt>
-                <div
+                <a
+                  href="https://github.com/NotMyFault"
                   class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <img src="../assets/icons/github-white.svg" class="h-6" />
-                </div>
+                </a>
                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
                   GitHub
                 </p>
@@ -72,11 +74,12 @@ export default defineComponent({});
 
             <div class="relative justify-self-center">
               <dt>
-                <div
+                <a
+                  href="https://discord.com/users/254790994594234370"
                   class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <img src="../assets/icons/discord.svg" class="h-6" />
-                </div>
+                </a>
                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
                   Discord
                 </p>
