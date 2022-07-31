@@ -97,5 +97,8 @@ export default defineComponent({
     :show-releases="true"
     :optional-dependencies="optionalDependencies"
   >
+    <template v-slot:configuration>
+      {{ "test" }}
+    </template>
   </ProjectComponent>
 </template>

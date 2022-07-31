@@ -28,19 +28,22 @@ export default defineComponent({
       selected: undefined as Version | undefined,
       hovered: undefined as string | undefined,
       collapsed: true,
-      releases: [] as {
-        id: number;
-        published_at: string;
-        name: string;
-        body: string;
-      }[],
+      releases: undefined as
+        | {
+            id: number;
+            published_at: string;
+            name: string;
+            body: string;
+            html_url: string;
+          }[]
+        | undefined,
     };
   },
   mounted() {
     this.$data.selected = (this.$props.versions ?? [])[0];
     if (this.$props.showReleases) {
       marked.use({
-        renderer: RENDERER,
+        renderer: RENDERER(this.$props.repository ?? ""),
       });
       fetch(
         `https://api.github.com/repos/intellectualsites/${this.repository}/releases`
@@ -82,6 +85,7 @@ export default defineComponent({
           {{ name }}
         </p>
 
+        <!-- Version selection -->
         <div v-if="selected !== undefined">
           <div class="md:grid md:grid-cols-3 md:gap-6">
             <div class="md:col-span-1">
@@ -260,6 +264,7 @@ export default defineComponent({
           </div>
         </div>
 
+        <!-- Dependencies -->
         <div class="hidden sm:block" aria-hidden="true">
           <div class="py-5">
             <div class="border-t border-gray-200"></div>
@@ -300,6 +305,7 @@ export default defineComponent({
           </div>
         </div>
 
+        <!-- Installation -->
         <div
           class="hidden sm:block"
           aria-hidden="true"
@@ -326,7 +332,59 @@ export default defineComponent({
             <div class="mt-5 md:mt-0 md:col-span-2">
               <div class="shadow sm:rounded-md">
                 <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
-                  {{ $t("test") }}
+                  <slot name="configuration"></slot>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Changelog -->
+        <div class="hidden sm:block" aria-hidden="true">
+          <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+          </div>
+        </div>
+        <div class="mt-10 sm:mt-0">
+          <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+              <div class="px-4 sm:px-0">
+                <h3 class="text-lg font-medium leading-6 text-gray-900">
+                  Changelog
+                </h3>
+              </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+              <div class="sm:rounded-md">
+                <div class="px-4 py-5 space-y-6 sm:p-6">
+                  <ol
+                    class="relative border-l border-gray-800"
+                    v-if="releases !== undefined"
+                  >
+                    <li
+                      class="mb-10 ml-4"
+                      v-for="release in releases"
+                      v-bind:key="release.id"
+                    >
+                      <div
+                        class="absolute w-3 h-3 bg-gray-800 rounded-full mt-1.5 -left-1.5 border border-white"
+                      ></div>
+                      <time
+                        class="mb-1 text-sm font-normal leading-none text-gray-700"
+                        >{{
+                          new Date(release.published_at).toLocaleDateString()
+                        }}
+                      </time>
+                      <h3 class="text-2xl font-semibold text-is-red">
+                        <a :href="release.html_url">{{ release.name }}</a>
+                      </h3>
+                      <p
+                        class="mb-4 text-base font-normal text-gray-700"
+                        v-html="md(release.body)"
+                      ></p>
+                    </li>
+                  </ol>
+                  <span v-else> Loading... </span>
                 </div>
               </div>
             </div>
