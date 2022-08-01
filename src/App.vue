@@ -6,7 +6,9 @@ import NavigationComponent from "@/components/NavigationComponent.vue";
 <template>
   <div class="flex flex-col h-screen">
     <NavigationComponent />
-    <RouterView class="grow mt-5" />
+    <main class="grow">
+      <RouterView />
+    </main>
     <footer class="bg-gray-800 shadow flex items-center justify-center p-5">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© {{ new Date().getUTCFullYear() }} IntellectualSites | Made with
