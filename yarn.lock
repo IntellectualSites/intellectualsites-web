@@ -151,9 +151,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@intlify/vite-plugin-vue-i18n@npm:5.0.1":
-  version: 5.0.1
-  resolution: "@intlify/vite-plugin-vue-i18n@npm:5.0.1"
+"@intlify/vite-plugin-vue-i18n@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@intlify/vite-plugin-vue-i18n@npm:6.0.1"
   dependencies:
     "@intlify/bundle-utils": next
     "@intlify/shared": next
@@ -172,7 +172,7 @@ __metadata:
       optional: true
     vue-i18n:
       optional: true
-  checksum: ba7561ea1be2cba4cbd738064bf1b2944b7487364b83e8e8af705d8b05e39467ada16008560c7564a532c2d59cf95be83401fe8f3e6e0b3e01ecad11f42d6fa0
+  checksum: 4482ca3ff3003d3eb44ed4d045656caf34f8946be3d98ef599016faffc15dbbd088e0515bfa874b10daa667615de01ff25ea94429e06632a65892f97a0c5a8c5
   languageName: node
   linkType: hard
 
@@ -1954,7 +1954,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "intellectualsites-website@workspace:."
   dependencies:
-    "@intlify/vite-plugin-vue-i18n": 5.0.1
+    "@intlify/vite-plugin-vue-i18n": 6.0.1
     "@rushstack/eslint-patch": 1.1.4
     "@types/marked": 4.0.3
     "@vitejs/plugin-vue": 3.0.3
