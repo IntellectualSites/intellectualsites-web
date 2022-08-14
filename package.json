@@ -2,7 +2,7 @@
   "name": "intellectualsites-website",
   "version": "0.0.0",
   "scripts": {
-    "init": "yarn install",
+    "prepare": "yarn install",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --port 5050",
