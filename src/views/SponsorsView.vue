@@ -34,7 +34,7 @@ export default defineComponent({
         },
         {
           title: "JetBrains",
-          img: "https://i.imgur.com/uNb5fMb.png",
+          img: "https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg",
           text:
             "JetBrains provides us a variety of products customizable without a limit. " +
             "JetBrains is a software development company whose tools are targeted towards software developers and project managers. " +
@@ -43,10 +43,10 @@ export default defineComponent({
           url: "https://www.jetbrains.com/",
         },
         {
-          title: "Pixel²",
-          img: "https://i.imgur.com/PpUWXkv.png",
+          title: "PixelSquared",
+          img: "/src/assets/logos/pixelsquared.svg",
           text:
-            "Pixel² is an indie games studio started out of Northern Ireland in 2017 and growing worldwide. " +
+            "PixelSquared is an indie games studio started out of Northern Ireland in 2017 and growing worldwide. " +
             "We are partnered with Microsoft to provide you with thrilling adventure maps, stunning texture packs, and " +
             "stylish skins, which can all be found on the official Minecraft Marketplace. ",
           url: "https://pixelsquared.studio/",
