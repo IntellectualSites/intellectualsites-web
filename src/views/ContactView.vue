@@ -68,7 +68,7 @@ export default defineComponent({});
                 </p>
               </dt>
               <dd class="ml-16 text-base text-gray-500">
-                <a href="https://github.com/NotMyFault">@NotMyFault</a>
+                <a href="https://github.com/IntellectualSites">@IntellectualSites</a>
               </dd>
             </div>
 
@@ -85,8 +85,8 @@ export default defineComponent({});
                 </p>
               </dt>
               <dd class="ml-16 text-base text-gray-500">
-                <a href="https://discord.com/users/254790994594234370"
-                  >NotMyFault#3732</a
+                <a href="https://discord.gg/intellectualsites"
+                  >discord.gg/intellectualsites</a
                 >
               </dd>
             </div>
