@@ -33,5 +33,5 @@
     "vite": "3.0.7",
     "vue-tsc": "0.40.1"
   },
-  "packageManager": "yarn@3.2.2"
+  "packageManager": "yarn@3.2.3"
 }
