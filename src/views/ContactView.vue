@@ -10,7 +10,7 @@ export default defineComponent({});
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <p
-            class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
             Contact
           </p>
@@ -58,24 +58,7 @@ export default defineComponent({});
             <div class="relative justify-self-center">
               <dt>
                 <a
-                  href="https://github.com/NotMyFault"
-                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
-                >
-                  <img src="../assets/icons/github-white.svg" class="h-6" />
-                </a>
-                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
-                  GitHub
-                </p>
-              </dt>
-              <dd class="ml-16 text-base text-gray-500">
-                <a href="https://github.com/IntellectualSites">@IntellectualSites</a>
-              </dd>
-            </div>
-
-            <div class="relative justify-self-center">
-              <dt>
-                <a
-                  href="https://discord.com/users/254790994594234370"
+                  href="https://discord.gg/intellectualsites"
                   class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
                 >
                   <img src="../assets/icons/discord.svg" class="h-6" />
@@ -90,13 +73,26 @@ export default defineComponent({});
                 >
               </dd>
             </div>
-          </dl>
-        </div>
 
-        <div class="lg:text-center mt-10">
-          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            If you need help with our software, please join our discord.
-          </p>
+            <div class="relative justify-self-center">
+              <dt>
+                <a
+                  href="https://github.com/IntellectualSites"
+                  class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-is-red text-white"
+                >
+                  <img src="../assets/icons/github-white.svg" class="h-6" />
+                </a>
+                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">
+                  GitHub
+                </p>
+              </dt>
+              <dd class="ml-16 text-base text-gray-500">
+                <a href="https://github.com/IntellectualSites"
+                  >@IntellectualSites</a
+                >
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </div>

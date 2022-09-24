@@ -82,10 +82,7 @@ export default defineComponent({
         <div
           class="grid lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-12 mt-6 max-w-7xl text-l text-gray-700 lg:mx-auto mb-5 items-start"
         >
-          <RouterLink
-            class="text-center lg:mt-10"
-            to="/project/fastasyncworldedit"
-          >
+          <RouterLink class="text-center" to="/project/fastasyncworldedit">
             <img
               src="@/assets/icons/plugins/fawe.svg"
               class="w-24 h-24 m-auto"
@@ -101,7 +98,7 @@ export default defineComponent({
           </RouterLink>
 
           <RouterLink
-            class="text-center lg:mt-10 sm:mb-5"
+            class="text-center sm:mb-5"
             to="/project/fastasyncvoxelsniper"
           >
             <img

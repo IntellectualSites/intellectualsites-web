@@ -10,14 +10,6 @@ export default defineComponent({
           path: "/",
         },
         {
-          name: "SpigotMC",
-          path: "https://www.spigotmc.org/members/79996/#resources",
-        },
-        {
-          name: "Jenkins (CI)",
-          path: "https://ci.athion.net/",
-        },
-        {
           name: "Sponsors",
           path: "/sponsors",
         },
@@ -26,12 +18,20 @@ export default defineComponent({
           path: "/contact",
         },
         {
-          name: "Discord",
-          path: "https://discord.gg/intellectualsites",
-        },
-        {
           name: "Team",
           path: "/team",
+        },
+        {
+          name: "SpigotMC",
+          path: "https://www.spigotmc.org/members/79996/#resources",
+        },
+        {
+          name: "Jenkins (CI)",
+          path: "https://ci.athion.net/",
+        },
+        {
+          name: "Discord",
+          path: "https://discord.gg/intellectualsites",
         },
       ],
     };

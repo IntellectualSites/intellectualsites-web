@@ -1,6 +1,7 @@
 {
   "team": {
-    "title": "Team Members"
+    "title": "Team Members",
+    "subtitle": "All the great people who make IntellectualSites possible"
   },
   "projects": {
     "FastAsyncWorldEdit": {
