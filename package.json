@@ -9,6 +9,7 @@
     "typecheck": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore"
   },
+  "license": "MIT",
   "dependencies": {
     "marked": "4.2.2",
     "vue": "3.2.45",

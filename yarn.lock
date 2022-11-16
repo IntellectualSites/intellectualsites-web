@@ -141,6 +141,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@intlify/message-compiler@next":
+  version: 9.3.0-beta.7
+  resolution: "@intlify/message-compiler@npm:9.3.0-beta.7"
+  dependencies:
+    "@intlify/shared": 9.3.0-beta.7
+    source-map: 0.6.1
+  checksum: 0c8948cf5e96c1530f03422bb92c52070a26e414f90b0f4e2e029236731cc6fc0f0617ea4400d6196f821615619c5ff60943023b86e2d776b8a875003fa25a79
+  languageName: node
+  linkType: hard
+
 "@intlify/message-compiler@npm:9.2.2":
   version: 9.2.2
   resolution: "@intlify/message-compiler@npm:9.2.2"
@@ -151,13 +161,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@intlify/message-compiler@npm:next":
+"@intlify/shared@next, @intlify/shared@npm:9.3.0-beta.7":
   version: 9.3.0-beta.7
-  resolution: "@intlify/message-compiler@npm:9.3.0-beta.7"
-  dependencies:
-    "@intlify/shared": 9.3.0-beta.7
-    source-map: 0.6.1
-  checksum: 0c8948cf5e96c1530f03422bb92c52070a26e414f90b0f4e2e029236731cc6fc0f0617ea4400d6196f821615619c5ff60943023b86e2d776b8a875003fa25a79
+  resolution: "@intlify/shared@npm:9.3.0-beta.7"
+  checksum: d3eac96b668b9c507f33d26c5999b8b3760bebc7f22625f5b0146a09570a09c321812b7b159c62629e1dd3d76adf4abf29066d83c987be2ee88f872c41c579b8
   languageName: node
   linkType: hard
 
@@ -165,13 +172,6 @@ __metadata:
   version: 9.2.2
   resolution: "@intlify/shared@npm:9.2.2"
   checksum: 3aad616c66c6ec479f78750e32a6f2d2f20fb7a32b4b634c2c81c58de52ca4f9c5ebfcb347411f5a719e08bd80cbcb86f13a66ad7a1a3faae45877d7ba789250
-  languageName: node
-  linkType: hard
-
-"@intlify/shared@npm:9.3.0-beta.7, @intlify/shared@npm:next":
-  version: 9.3.0-beta.7
-  resolution: "@intlify/shared@npm:9.3.0-beta.7"
-  checksum: d3eac96b668b9c507f33d26c5999b8b3760bebc7f22625f5b0146a09570a09c321812b7b159c62629e1dd3d76adf4abf29066d83c987be2ee88f872c41c579b8
   languageName: node
   linkType: hard
 
