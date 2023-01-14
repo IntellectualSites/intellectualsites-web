@@ -288,10 +288,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/marked@npm:4.0.7":
-  version: 4.0.7
-  resolution: "@types/marked@npm:4.0.7"
-  checksum: 4907b6a606578cd864bad429aca3c234591e6ed56bd141c575140487269b825a480ace9a85e4d003d1de1f007004c9d9b2fe600038ded5bba75aef59118e58d5
+"@types/marked@npm:4.0.8":
+  version: 4.0.8
+  resolution: "@types/marked@npm:4.0.8"
+  checksum: 68278fa7acaa5d920cdc239d675b5daf842e0ad4779e4848cd617d9baf2ac1afccb5a264c331e37d80031d647e1640cb983cd31e73d45b28552670b4853fad8e
   languageName: node
   linkType: hard
 
@@ -2006,7 +2006,7 @@ __metadata:
   dependencies:
     "@intlify/vite-plugin-vue-i18n": 6.0.3
     "@rushstack/eslint-patch": 1.2.0
-    "@types/marked": 4.0.7
+    "@types/marked": 4.0.8
     "@vitejs/plugin-vue": 3.2.0
     "@vue/eslint-config-prettier": 7.0.0
     "@vue/eslint-config-typescript": 11.0.2
@@ -2014,7 +2014,7 @@ __metadata:
     autoprefixer: 10.4.13
     eslint: 8.28.0
     eslint-plugin-vue: 9.8.0
-    marked: 4.2.3
+    marked: 4.2.12
     postcss: 8.4.19
     prettier: 2.8.0
     tailwindcss: 3.2.4
@@ -2237,12 +2237,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:4.2.3":
-  version: 4.2.3
-  resolution: "marked@npm:4.2.3"
+"marked@npm:4.2.12":
+  version: 4.2.12
+  resolution: "marked@npm:4.2.12"
   bin:
     marked: bin/marked.js
-  checksum: 21b9f6cc4e7695b5e1f251b7b6c98fdc29c25f7ee6c8f4d5c51654856ea36d6222e9a5a227a9b89ccba717dcf7a722022f099aa0dc7caad8e041c996906c23d0
+  checksum: bd551cd61028ee639d4ca2ccdfcc5a6ba4227c1b143c4538f3cde27f569dcb57df8e6313560394645b418b84a7336c07ab1e438b89b6324c29d7d8cdd3102d63
   languageName: node
   linkType: hard
 
