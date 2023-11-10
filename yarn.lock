@@ -2319,7 +2319,7 @@ __metadata:
     autoprefixer: 10.4.16
     eslint: 8.52.0
     eslint-plugin-vue: 9.17.0
-    marked: 5.1.2
+    marked: 9.1.6
     postcss: 8.4.31
     prettier: 3.0.3
     tailwindcss: 3.3.3
@@ -2619,12 +2619,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:5.1.2":
-  version: 5.1.2
-  resolution: "marked@npm:5.1.2"
+"marked@npm:9.1.6":
+  version: 9.1.6
+  resolution: "marked@npm:9.1.6"
   bin:
     marked: bin/marked.js
-  checksum: fff8741a1dc7313f32bea221079a3d6ff55cd485170fade8841b77b48c89ad5b96676e645636e73e50f4b5b6d65cf9d8821072afb16173822505949df2407ffe
+  checksum: fc8db42e993d0b97a6f12b8edd93635fa30259ef7088982c714b1c0f54b16946dda54f1bb8a80ab1bd6914647a7217a4f482eda96eb7049bf67437c79e75a609
   languageName: node
   linkType: hard
 
