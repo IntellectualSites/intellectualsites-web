@@ -504,10 +504,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/eslint-patch@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@rushstack/eslint-patch@npm:1.5.1"
-  checksum: e4c25322312dbaa29e835a7ab4fbac53c8731dd0da65e46646e38945e296429e7fb91c2ef3da5af5d5938d44b0cde1d5290438ebb3dcb015e02b80b5e2530d24
+"@rushstack/eslint-patch@npm:1.16.1":
+  version: 1.16.1
+  resolution: "@rushstack/eslint-patch@npm:1.16.1"
+  checksum: 9d96da20f7b9a6ae8f82388b41ab224aad58e4d59329828c5b7f272a473e589bc03791f64c3a422e42ef2d5fbd3b9f3125d8de969cf43a9f557bc7e6b14de832
   languageName: node
   linkType: hard
 
@@ -2310,7 +2310,7 @@ __metadata:
   resolution: "intellectualsites-website@workspace:."
   dependencies:
     "@intlify/vite-plugin-vue-i18n": 6.0.3
-    "@rushstack/eslint-patch": 1.5.1
+    "@rushstack/eslint-patch": 1.16.1
     "@types/marked": 5.0.2
     "@vitejs/plugin-vue": 4.4.0
     "@vue/eslint-config-prettier": 8.0.0
