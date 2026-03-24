@@ -914,15 +914,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/tsconfig@npm:0.1.3":
-  version: 0.1.3
-  resolution: "@vue/tsconfig@npm:0.1.3"
+"@vue/tsconfig@npm:0.9.1":
+  version: 0.9.1
+  resolution: "@vue/tsconfig@npm:0.9.1"
   peerDependencies:
-    "@types/node": "*"
+    typescript: ">= 5.8"
+    vue: ^3.4.0
   peerDependenciesMeta:
-    "@types/node":
+    typescript:
       optional: true
-  checksum: 8150a24497a5348bc342c27afb38ad989de2ce8e94c349020628065d2a8df6837cb8bb3012f9161eea716487832612ac71b5f910d95bac41539ac6021d6bd88d
+    vue:
+      optional: true
+  checksum: d4c1b755044cfe33f400cbd00cc91c11fc8dff06a6992d5775e3352048f57dbfc7a7e66bdda64954ef7c8d1d16e08b01fd4501326ca19f3ca2a2c63a572c427e
   languageName: node
   linkType: hard
 
@@ -2315,7 +2318,7 @@ __metadata:
     "@vitejs/plugin-vue": 4.4.0
     "@vue/eslint-config-prettier": 8.0.0
     "@vue/eslint-config-typescript": 12.0.0
-    "@vue/tsconfig": 0.1.3
+    "@vue/tsconfig": 0.9.1
     autoprefixer: 10.4.16
     eslint: 8.52.0
     eslint-plugin-vue: 9.17.0
